@@ -1,0 +1,11 @@
+AC-RBF training-episode study (5 seeds, mean +/- std)
+N      | Case 1 start-up: ISE / IAE / ITAE  | Case 2 inlet steps: ISE / IAE / ITAE | Ts (s), train time (s)
+30     | 4.0900 / 2.4843 / 2.2016+-0.3202 | 0.00961 / 0.4751 / 50.411+-14.205 | 9.29, 6
+50     | 4.0888 / 2.4360 / 1.8151+-0.0752 | 0.00582 / 0.2927 / 30.392+-4.765 | 6.67, 10
+100    | 4.0879 / 2.4130 / 1.7086+-0.0053 | 0.00293 / 0.1973 / 20.417+-1.040 | 6.63, 21
+200    | 4.0877 / 2.4290 / 1.9152+-0.0007 | 0.00197 / 0.2088 / 22.946+-0.037 | 8.67, 41
+
+Relative change of the mean index when doubling/extending training:
+   30 ->  50 : Case1 ISE -0.03%  IAE -1.94%  ITAE -17.55% | Case2 ISE -39.38%  IAE -38.40%  ITAE -39.71%
+   50 -> 100 : Case1 ISE -0.02%  IAE -0.95%  ITAE -5.87% | Case2 ISE -49.68%  IAE -32.59%  ITAE -32.82%
+  100 -> 200 : Case1 ISE -0.00%  IAE +0.67%  ITAE +12.09% | Case2 ISE -32.61%  IAE +5.81%  ITAE +12.39%

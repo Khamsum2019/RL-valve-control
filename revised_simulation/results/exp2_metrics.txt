@@ -1,0 +1,50 @@
+Three-method comparison (AC-RBF: 100 training episodes, mean over 5 seeds; std in brackets)
+
+Case 1: start-up
+  Method      ISE                  IAE                  ITAE                   Ts (s)
+  Fixed PID   4.17261              5.01087              113.9870               88.34
+  RBF-PID     4.08802              2.41871              1.7212                 5.64
+  AC-RBF PID  4.08786 (9.1e-05)    2.41297 (1.8e-03)    1.7086 (5.3e-03)       6.63 (0.16)
+  AC-RBF improvement vs Fixed PID: ISE 2.0%, IAE 51.8%, ITAE 98.5%
+  AC-RBF improvement vs RBF-PID:   ISE 0.0%, IAE 0.2%, ITAE 0.7%
+
+Case 2: inlet steps
+  Method      ISE                  IAE                  ITAE                  
+  Fixed PID   0.02144              1.10563              121.6817              
+  RBF-PID     0.01757              0.88834              94.2113               
+  AC-RBF PID  0.00293 (3.8e-04)    0.19730 (1.2e-02)    20.4165 (1.0e+00)     
+  AC-RBF improvement vs Fixed PID: ISE 86.3%, IAE 82.2%, ITAE 83.2%
+  AC-RBF improvement vs RBF-PID:   ISE 83.3%, IAE 77.8%, ITAE 78.3%
+
+Case 3: nominal parameters
+  Method      ISE                  IAE                  ITAE                  
+  Fixed PID   0.00373              0.31787              30.1706               
+  RBF-PID     0.00385              0.33009              31.6691               
+  AC-RBF PID  0.00050 (6.1e-05)    0.05427 (2.6e-03)    4.7365 (2.3e-01)      
+  AC-RBF improvement vs Fixed PID: ISE 86.6%, IAE 82.9%, ITAE 84.3%
+  AC-RBF improvement vs RBF-PID:   ISE 87.0%, IAE 83.6%, ITAE 85.0%
+
+Case 3: parameter set A
+  Method      ISE                  IAE                  ITAE                  
+  Fixed PID   0.00607              0.49835              30.7606               
+  RBF-PID     0.00568              0.46351              28.5245               
+  AC-RBF PID  0.00084 (1.0e-04)    0.08853 (4.1e-03)    4.7006 (2.3e-01)      
+  AC-RBF improvement vs Fixed PID: ISE 86.2%, IAE 82.2%, ITAE 84.7%
+  AC-RBF improvement vs RBF-PID:   ISE 85.3%, IAE 80.9%, ITAE 83.5%
+
+Case 3: parameter set B
+  Method      ISE                  IAE                  ITAE                  
+  Fixed PID   0.05951              1.46223              48.9110               
+  RBF-PID     0.67146              10.00282             762.0160              
+  AC-RBF PID  0.00800 (9.3e-04)    0.21560 (1.3e-02)    5.7377 (3.4e-01)      
+  AC-RBF improvement vs Fixed PID: ISE 86.6%, IAE 85.3%, ITAE 88.3%
+  AC-RBF improvement vs RBF-PID:   ISE 98.8%, IAE 97.8%, ITAE 99.2%
+
+Case 4: random inlet
+  Method      ISE                  IAE                  ITAE                  
+  Fixed PID   0.04743              3.12443              483.8298              
+  RBF-PID     0.04366              2.98596              455.7480              
+  AC-RBF PID  0.00639 (1.6e-03)    0.93545 (1.6e-01)    136.4656 (2.3e+01)    
+  AC-RBF improvement vs Fixed PID: ISE 86.5%, IAE 70.1%, ITAE 71.8%
+  AC-RBF improvement vs RBF-PID:   ISE 85.4%, IAE 68.7%, ITAE 70.1%
+

@@ -1,0 +1,14 @@
+# MATLAB autosave and backup files
+*.asv
+*.m~
+
+# Simulink cache and build output
+*.slxc
+*.r20*
+slprj/
+
+# Compiled MEX files
+*.mex*
+
+# Archives
+*.zip
